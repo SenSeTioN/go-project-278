@@ -1,0 +1,22 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go build -o ./tmp/main ./cmd/app"
+  bin = "tmp/main"
+  include_ext = ["go"]
+  exclude_dir = ["tmp", "bin", "vendor", ".git", ".github"]
+  delay = 500
+  stop_on_error = true
+
+[log]
+  time = false
+
+[color]
+  main = "magenta"
+  watcher = "cyan"
+  build = "yellow"
+  runner = "green"
+
+[misc]
+  clean_on_exit = true
