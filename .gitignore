@@ -1,0 +1,6 @@
+/tmp/
+/bin/app
+main
+*.exe
+.env
+.claude
