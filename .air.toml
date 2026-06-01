@@ -2,10 +2,10 @@ root = "."
 tmp_dir = "tmp"
 
 [build]
-  cmd = "go build -o ./tmp/main ./cmd/app"
+  cmd = "go build -o ./tmp/main ."
   bin = "tmp/main"
   include_ext = ["go"]
-  exclude_dir = ["tmp", "bin", "vendor", ".git", ".github"]
+  exclude_dir = ["tmp", "bin", "vendor", ".git", ".github", "node_modules"]
   delay = 500
   stop_on_error = true
 
